@@ -12,5 +12,9 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "weather": {
+    "dataSource": "weather",
+    "public": true
   }
 }

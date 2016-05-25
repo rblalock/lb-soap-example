@@ -1,21 +1,21 @@
 {
-	"weather": {
-		"url": "http://wsf.cdyne.com/WeatherWS/Weather.asmx",
-		"name": "weather",
-		"wsdl": "http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL",
-		"remotingEnabled": true,
-		"connector": "soap",
-		"operations": {
-			"cityWeatherByZIP": {
-				"service": "Weather",
-				"port": "WeatherSoap",
-				"operation": "GetCityWeatherByZIP"
-			},
-			"cityWeatherByZIP12": {
-				"service": "Weather",
-				"port": "WeatherSoap12",
-				"operation": "GetCityWeatherByZIP"
-			}
-		}
-	}
+  "weather": {
+    "url": "http://wsf.cdyne.com/WeatherWS/Weather.asmx",
+    "name": "weather",
+    "wsdl": "http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL",
+    "remotingEnabled": true,
+    "connector": "soap",
+    "operations": {
+      "cityWeatherByZIP": {
+        "service": "Weather",
+        "port": "WeatherSoap",
+        "operation": "GetCityWeatherByZIP"
+      },
+      "cityWeatherByZIP12": {
+        "service": "Weather",
+        "port": "WeatherSoap12",
+        "operation": "GetCityWeatherByZIP"
+      }
+    }
+  }
 }

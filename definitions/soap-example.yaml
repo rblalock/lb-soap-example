@@ -1,36 +1,30 @@
+paths: {}
+definitions: {}
 swagger: '2.0'
-
 info:
   x-ibm-name: soap-example
   version: 1.0.0
   title: soap-example
-
 schemes:
   - https
 host: $(catalog.host)
 basePath: /api
-
 consumes:
   - application/json
 produces:
   - application/json
-
 securityDefinitions:
- clientIdHeader:
-   type: apiKey
-   in: header
-   name: X-IBM-Client-Id
- clientSecretHeader:
-   in: "header"
-   name: "X-IBM-Client-Secret"
-   type: "apiKey"
-
-
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
 security:
- -
-   clientIdHeader: []
-   clientSecretHeader: []
-
+  - clientIdHeader: []
+    clientSecretHeader: []
 x-ibm-configuration:
   testable: true
   enforced: true
@@ -47,9 +41,3 @@ x-ibm-configuration:
     execute:
       - invoke:
           target-url: $(runtime-url)$(request.path)$(request.search)
-
-paths: {}
-
-
-definitions: {}
-
